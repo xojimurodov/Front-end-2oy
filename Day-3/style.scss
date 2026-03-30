@@ -1,0 +1,219 @@
+$mc: rgb(76, 200, 188);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  color: $mc;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.519);
+  box-shadow: -1px 0px 10px $mc;
+  position: sticky;
+  top: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__link {
+    color: black;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+
+    &:hover {
+      color: $mc;
+    }
+  }
+
+  &__btn {
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: $mc;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: black;
+      cursor: pointer;
+    }
+  }
+}
+
+.intro {
+  margin-top: 200px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    width: 700px;
+  }
+
+  &__text {
+    color: black;
+  }
+
+  &__img {
+    width: 400px;
+  }
+}
+
+.it {
+  margin-top: 200px;
+
+  &__container {
+    width: 1000px;
+    background-color: white;
+    box-shadow: 2px 2px 4px $mc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 40px;
+    border-radius: 10px;
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__btn {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 10px;
+    gap: 5px;
+    border: none;
+    cursor: pointer;
+    &:nth-child(1) {
+      background-color: blue;
+    }
+
+    &:nth-child(2) {
+      background-color: black;
+    }
+    &:nth-child(3) {
+      background-color: rgb(255, 174, 25);
+    }
+  }
+
+  &__link {
+    color: white;
+  }
+
+  &__logo {
+    width: 20px;
+  }
+}
+
+.projects {
+  margin-top: 60px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__card {
+    padding: 5px;
+    width: 1200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 0px 10px $mc;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    &:hover {
+      background-color: $mc;
+    }
+  }
+
+  &__link {
+    color: rgb(0, 0, 0);
+  }
+}
+
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+  background-color: $mc;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0px -1px 10px black;
+}
